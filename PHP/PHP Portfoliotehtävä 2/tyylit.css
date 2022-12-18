@@ -1,0 +1,83 @@
+:root {
+    --musta: rgb(0, 0, 0);
+    --liila: rgb(178, 157, 236);
+    --tummaliila: rgb(121, 97, 189);
+}
+
+header {
+    text-align: center;
+    background-color: var(--liila);
+}
+
+main {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+section {
+    max-width: 200px;
+}
+
+article {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+article>form {
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.nappi:hover {
+    background-color: var(--liila);
+}
+
+li {
+    list-style-type: none;
+}
+
+a.linkkinappi {
+    color: var(--musta);
+}
+
+a.linkkinappi:hover {
+    color: var(--liila);
+}
+
+a.linkkinappi:link,
+a.linkkinappi:visited {
+    background-color: var(--liila);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.linkkinappi:hover,
+a.linkkinappi:active {
+    background-color: var(--tummaliila);
+}
+
+.piilotettu {
+    display: none;
+}
+
+.nappi-lista {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
+.nappi-lista-pysty {
+    flex-direction: column;
+}
+
+#kysymyslista {
+    padding-left: 0;
+}

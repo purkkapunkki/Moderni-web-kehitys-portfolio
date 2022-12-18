@@ -1,0 +1,270 @@
+body {
+  max-width: 1200px;
+}
+a:link {
+  text-decoration: none;
+}
+nav li {
+  list-style-type: none;
+}
+#top-navi ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+#top-navi li {
+  padding: 0.5rem;
+  width: 100%;
+}
+#top-navi a {
+  font-weight: bold;
+}
+#top-navi ul li .submenu {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  background-image: url('navi-arrow.png');
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+  margin-top: -5px;
+  padding-top: 26px;
+  flex-direction: column;
+}
+#top-navi ul li .submenu li {
+  display: none;
+}
+#top-navi ul li:hover .submenu li {
+  display: block;
+}
+header {
+  text-align: center;
+}
+#site-header {
+  background-image: url("banner.png");
+  font-size: 1.5rem;
+  padding: 0.7rem 0 0.7rem 0;
+}
+#row1 {
+  display: flex;
+  flex-direction: column;
+}
+#row1 #news-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+#row1 #news-box h1 {
+  margin: 0;
+  font-size: 26px;
+}
+#row1 #news-box p {
+  margin: 0 0 1rem 0;
+}
+#row1 #sidebar #events .event {
+  align-items: center;
+}
+#row1 #sidebar {
+  display: flex;
+  flex-direction: column;
+}
+#row1 #sidebar h1 {
+  font-size: 20px;
+  padding: 0.5rem;
+  margin: 0;
+}
+#row1 #sidebar #login-box p {
+  display: flex;
+  justify-content: space-between;
+}
+#row1 #sidebar #login-box p input {
+  margin-right: 2rem;
+}
+#row1 #sidebar #events {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+#row1 #sidebar #events .event {
+  display: flex;
+  column-gap: 0.7rem;
+}
+#row1 #sidebar #events .event-date {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+#row1 #sidebar #events .event-date .day {
+  padding: 0.25rem 1.25rem;
+  font-size: 20px;
+}
+#row1 #sidebar #events .event-date .month {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#row2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+#row2 .project {
+  border-radius: 15px;
+}
+#row3 {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+#row3 header > img {
+  height: 50px;
+  object-fit: contain;
+  margin: 1rem;
+}
+#row3 .tw-post {
+  display: flex;
+  padding: 0.5rem;
+}
+#row3 .tw-post .tw-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#row3 .tw-post .tw-logo {
+  object-fit: contain;
+  object-position: top;
+}
+#row3 .tw-post .tw-tweet {
+  flex-basis: 100%;
+}
+#row3 .tw-post .tw-user {
+  font-size: 1.1rem;
+}
+#row3 .tw-post .tweet-buttons {
+  display: flex;
+  justify-content: end;
+  padding: 0.2rem;
+  margin-left: auto;
+}
+#row3 .fb-post {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+#row3 .fb-post .fb-user {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 600px) {
+  #top-navi ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #row1 {
+    flex-direction: row;
+  }
+  #row1 #news-box {
+    gap: 1rem;
+    flex-basis: 0;
+    flex-grow: 3;
+  }
+  #row1 #sidebar {
+    flex-basis: 0;
+    flex-grow: 2;
+  }
+}
+@media screen and (min-width: 800px) {
+  #row1 #news-box {
+    flex-direction: row;
+    flex-grow: 5;
+  }
+  #row1 #sidebar {
+    flex-direction: column;
+    flex-grow: 2;
+  }
+  #row2 {
+    flex-direction: row;
+    column-gap: 0.7rem;
+  }
+  #row3 {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+}
+.neutriVari-teksti {
+  color: #808080;
+}
+.tummaVihrea-teksti {
+  color: #336600;
+}
+.tummaVihrea-border {
+  background-color: #fff;
+  border: 2px solid #336600;
+  text-align: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.date,
+.tw-date,
+.fb-date {
+  color: #808080;
+}
+#top-navi {
+  background-color: #fff;
+  border: 2px solid #336600;
+  text-align: center;
+  padding: 0 0.5rem 0 0.5rem;
+  background-color: #33cc33;
+}
+#top-navi li:hover {
+  background-color: #a6e468;
+}
+#top-navi a {
+  color: #336600;
+}
+#site-header {
+  color: #336600;
+  text-shadow: 2px 2px #a6e468;
+  background-color: #fff;
+  border: 2px solid #336600;
+  text-align: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
+#sidebar h1 {
+  background-color: #33cc33;
+  color: #336600;
+}
+#sidebar input {
+  background-color: #a6e468;
+}
+#sidebar .event-date {
+  background-color: #fff;
+  border: 2px solid #336600;
+  text-align: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
+#sidebar .event-date .month {
+  background-color: #336600;
+  color: #a6e468;
+  width: 100%;
+}
+#row2 {
+  background-color: #a6e468;
+}
+#row2 .project {
+  background-color: #fff;
+  border: 2px solid #336600;
+  text-align: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.tw-user,
+.fb-user {
+  color: #33cc33;
+}
+.fb-post {
+  border-bottom: dashed 3px gray;
+}
+#top-navi ul li .submenu li {
+  background-color: #33cc33;
+}

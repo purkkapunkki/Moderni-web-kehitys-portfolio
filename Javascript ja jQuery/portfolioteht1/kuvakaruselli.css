@@ -1,0 +1,58 @@
+:root {
+    --border-stats: black solid 1px;
+    --padding-stats: 0.2rem;
+    --valilehdet-tausta: lightgrey;
+    --valittu-kuva: grey;
+
+}
+
+#sailio {
+    border: var(--border-stats);
+}
+
+#valilehdet {
+    background-color: var(--valilehdet-tausta);
+    border-top: var(--border-stats);
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+span {
+    border-right: var(--border-stats);
+    padding: var(--padding-stats);
+    display: inline-block;
+}
+
+#valilehdet>.valittu {
+    background-color: var(--valittu-kuva);
+}
+
+img {
+    max-width: 100%;
+}
+
+.kuva:not(.valittu) {
+    display: none;
+}
+
+.kuva {
+    display: flex;
+    flex-direction: column;
+}
+
+.kuvaus {
+    padding: var(--padding-stats);
+}
+
+@media screen and (min-width: 650px) {
+    img {
+        max-width: 50%;
+    }
+
+    .kuva {
+        flex-direction: row;
+        column-gap: 0.5rem;
+    }
+}

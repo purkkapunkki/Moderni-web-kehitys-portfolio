@@ -1,0 +1,23 @@
+:root {
+    --paa-vari: rgb(253, 181, 221);
+}
+
+h1 {
+    text-align: center;
+    background: var(--paa-vari);
+}
+
+hr {
+    border: dashed 2px var(--paa-vari);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    max-width: 15rem;
+}
+
+#nappi:hover {
+    background: var(--paa-vari);
+}

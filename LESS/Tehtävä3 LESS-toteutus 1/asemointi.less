@@ -1,0 +1,101 @@
+@spacing: 10px;
+@padding: 5px;
+
+body {
+    max-width: 1000px;
+    margin-top: 236px;
+}
+
+#nav-palkki2 {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+        padding-left: 0;
+    }
+}
+
+#yla-laatikot {
+    display: flex;
+    flex-direction: column;
+
+    .vihreuna-laatikot {
+        padding: @padding;
+        margin: @spacing;
+        position: relative;
+
+        .laatikko1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: opacity 2s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0;
+
+                &+.laatikko2 {
+                    opacity: 1;
+                }
+            }
+
+            h2 {
+                margin-left: 0.5rem;
+            }
+        }
+
+        .laatikko2 {
+            opacity: 0;
+            transition: opacity 2s;
+        }
+    }
+}
+
+.esittely {
+    margin: @spacing;
+}
+
+#ala-laatikot {
+    display: flex;
+    flex-direction: column;
+    margin: @spacing;
+
+    .parasta-laatikot {
+        padding: @padding;
+        margin: @spacing;
+
+        .kodinkone {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    body {
+        margin-top: 100px;
+    }
+
+    #nav-palkki2 ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #yla-laatikot {
+        flex-direction: row;
+    }
+
+    #ala-laatikot {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 800px) {}

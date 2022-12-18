@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Asiakirjat</title>
+	<link rel="stylesheet" type="text/css" href="kommentointisivusto.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+	<script src="kommentointisivusto.js"></script>
+</head>
+
+<body>
+
+	<div id="sailio">
+		<header>
+			<h1>Asiakirjat - odotamme kommenttejasi</h1>
+		</header>
+		<nav>
+			<select id="asiakirjavalinta">
+				<option value="" selected>Kaikki asiakirjat</option>
+			</select>
+		</nav>
+		<main>
+			<article>
+			</article>
+			<section id="kommentit">
+				<div id="lisaa-kommentti">
+					<h2>Lisää oma kommenttisi</h2>
+					<p>
+						<span class="kommentti-label">Nimi tai nimimerkki:</span>
+						<input type="text" id="kommenttinimimerkki" size="30">
+					</p>
+					<p>
+						<span class="kommentti-label">Kommenttiotsikko:</span>
+						<input type="text" id="kommenttiotsikko" size="30">
+					</p>
+					<p>
+						<textarea id="kommenttiteksti" cols="60" rows="10"></textarea>
+					</p>
+					<p>
+						<button id="laheta-kommentti">Lähetä</button>
+					</p>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+
+</html>

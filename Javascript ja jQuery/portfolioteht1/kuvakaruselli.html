@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Kuvakaruselli</title>
+	<link rel="stylesheet" type="text/css" href="kuvakaruselli.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+	<script src="kuvakaruselli.js"></script>
+</head>
+
+<body>
+
+	<div id="sailio">
+		<div id="karuselli">
+			<div id="kuva1" class="kuva valittu">
+				<img src="Hydrangeas.jpg" alt="Hortensiat">
+				<div class="kuvaus">
+					<p>Hortensiat (Hydrangea) on Itä-Aasiassa ja Amerikassa
+						luonnonvaraisena kasvava kukkakasvisuku, jossa on 70–75 lajia, joihin
+						kuuluu köynnöksiä ja pieniä pensaita. Niitä kasvatetaan koristekasveina
+						suurten kukintojensa takia. Suurin osa lajeista kasvaa luonnonvaraisina
+						Kiinassa ja Japanissa.</p>
+
+					<p>Hortensian kukat ovat yleensä valkoisia, punaisia tai sinertäviä.
+						Joidenkin lajien kukkien väri riippuu maaperän happamuudesta tai
+						alumiinipitoisuudesta.</p>
+				</div>
+			</div>
+			<div id="kuva2" class="kuva">
+				<img src="Chrysanthemum.jpg" alt="Krysanteemit">
+				<div class="kuvaus">
+					<p>Krysanteemit (Chrysanthemum) on monivuotisten asterikasvien suku,
+						johon kuuluu noin 30 lajia. Niitä käytetään yleisesti koristekasveina
+						sekä leikkokukkina. Krysanteemeja on viljelty koristeena Kiinassa ja
+						Japanissa jo tuhansien vuosien ajan. Japanissa se yhdistetään
+						kuolemattomuuteen ja keisariin.</p>
+
+					<p>Euroopassa krysanteemi on ollut suosittu leikkokukka 1700-luvulta
+						asti, ja nykyisin se yleistyy myös ruukkukukkana. Kasvi kukkii vain
+						lyhyen päivän jälkeen eli kun sitä on pidetty pimeässä ainakin 12 tuntia
+						vuorokaudesta.</p>
+				</div>
+			</div>
+			<div id="kuva3" class="kuva">
+				<img src="Penguins.jpg" alt="Pingviinit">
+				<div class="kuvaus">
+					<p>Pingviinit (Spheniscidae) on pingviinilintujen (Sphenisciformes)
+						lahkon ainoa heimo. Siihen kuuluu luokittelusta riippuen 17–20 lajia,
+						joista kaikki elävät eteläisellä pallonpuoliskolla. Pingviinejä ei
+						esiinny ainoastaan kylmässä ilmastossa, Etelämantereella ja Eteläisellä
+						jäämerellä, vaan myös tropiikissa. Galapagossaarten pingviinit ylittävät
+						ruoanhakumatkoillaan jopa päiväntasaajan.</p>
+				</div>
+			</div>
+			<div id="kuva4" class="kuva">
+				<img src="Tulips.jpg" alt="Tulppaanit">
+				<div class="kuvaus">
+					<p>Tulppaanit (Tulipa) ovat sipulikasveja, joita viljellään niiden
+						kauniiden kukkien takia. Villejä tulppaaneja on noin sata lajia, ja ne
+						ovat kotoisin Osmanien valtakunnan alueelta, Vähästä-Aasiasta tai
+						kenties jopa Himalajan juurelta saakka. Viljeltyjä lajikkeita on
+						tuhansia. Tulppaaneja on monen värisiä, muun muassa punaisia, keltaisia,
+						oransseja, sinisiä ja turkooseja. Tulppaanintuotannon suurvalta on
+						Alankomaat, josta tuodaan Suomeen sekä sipuleita että
+						leikkotulppaaneita. 65 prosenttia kukkasipulien maailmankaupasta on
+						hollantilaisten hallussa.</p>
+				</div>
+			</div>
+		</div>
+		<!-- Tämä on validia HTML5:ttä. Data-alkuiset attribuutit ovat ns. custom attribuutteja. Selain ei tee niille mitään, mutta niitä voi käyttää Javascriptissä -->
+		<div id="valilehdet">
+			<span id="tab1" data-kuva-indeksi="1" class="valittu">Kuva 1</span>
+			<span id="tab2" data-kuva-indeksi="2">Kuva 2</span>
+			<span id="tab3" data-kuva-indeksi="3">Kuva 3</span>
+			<span id="tab4" data-kuva-indeksi="4">Kuva 4</span>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

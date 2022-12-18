@@ -1,0 +1,41 @@
+@base: #663333;
+@complement: darken(spin(@base, 180), 5%);
+@lighten1: lighten(@base, 15%);
+@lighten2: lighten(@base, 30%);
+@background: @lighten2;
+@white: #fff;
+
+.navipalkki-varit {
+    background-color: @white;
+    border: 2px solid @lighten1;
+    box-shadow: 0 1px 5px 1px;
+
+    a {
+        color: @lighten1;
+
+        &:hover {
+            color: @complement;
+        }
+    }
+}
+
+.vihreuna-varit {
+    border: 10px solid @complement;
+    background-color: @background;
+}
+
+#nav-palkki2 {
+    .navipalkki-varit;
+}
+
+.vihreuna-laatikot {
+    .vihreuna-varit;
+}
+
+#ala-laatikot {
+    background-color: @background;
+
+    i {
+        color: @complement;
+    }
+}

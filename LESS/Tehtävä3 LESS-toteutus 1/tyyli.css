@@ -1,0 +1,126 @@
+body {
+  max-width: 1000px;
+  margin-top: 236px;
+}
+#nav-palkki2 {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+#nav-palkki2 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding-left: 0;
+}
+#yla-laatikot {
+  display: flex;
+  flex-direction: column;
+}
+#yla-laatikot .vihreuna-laatikot {
+  padding: 5px;
+  margin: 10px;
+  position: relative;
+}
+#yla-laatikot .vihreuna-laatikot .laatikko1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: opacity 2s;
+  cursor: pointer;
+}
+#yla-laatikot .vihreuna-laatikot .laatikko1:hover {
+  opacity: 0;
+}
+#yla-laatikot .vihreuna-laatikot .laatikko1:hover + .laatikko2 {
+  opacity: 1;
+}
+#yla-laatikot .vihreuna-laatikot .laatikko1 h2 {
+  margin-left: 0.5rem;
+}
+#yla-laatikot .vihreuna-laatikot .laatikko2 {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.esittely {
+  margin: 10px;
+}
+#ala-laatikot {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+#ala-laatikot .parasta-laatikot {
+  padding: 5px;
+  margin: 10px;
+}
+#ala-laatikot .parasta-laatikot .kodinkone {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 650px) {
+  body {
+    margin-top: 100px;
+  }
+  #nav-palkki2 ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #yla-laatikot {
+    flex-direction: row;
+  }
+  #ala-laatikot {
+    flex-direction: row;
+  }
+}
+.navipalkki-varit {
+  background-color: #fff;
+  border: 2px solid #994d4d;
+  box-shadow: 0 1px 5px 1px;
+}
+.navipalkki-varit a {
+  color: #994d4d;
+}
+.navipalkki-varit a:hover {
+  color: #2b5555;
+}
+.vihreuna-varit {
+  border: 10px solid #2b5555;
+  background-color: #bb7777;
+}
+#nav-palkki2 {
+  background-color: #fff;
+  border: 2px solid #994d4d;
+  box-shadow: 0 1px 5px 1px;
+}
+#nav-palkki2 a {
+  color: #994d4d;
+}
+#nav-palkki2 a:hover {
+  color: #2b5555;
+}
+.vihreuna-laatikot {
+  border: 10px solid #2b5555;
+  background-color: #bb7777;
+}
+#ala-laatikot {
+  background-color: #bb7777;
+}
+#ala-laatikot i {
+  color: #2b5555;
+}
+.otsikko {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 4em;
+}
+nav li {
+  list-style-type: none;
+}
+a:link {
+  text-decoration: none;
+}

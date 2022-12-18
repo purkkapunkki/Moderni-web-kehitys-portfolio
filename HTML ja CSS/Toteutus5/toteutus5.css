@@ -1,0 +1,280 @@
+:root {
+    --primary-color: #fff;
+    --primary-color2: #a0181c;
+    --secondary-color: #335a16;
+}
+
+.valkoteksti {
+    color: var(--primary-color);
+}
+
+.punteksti {
+    color: var(--primary-color2);
+}
+
+.otsakkeet {
+    font-family: 'Merriweather', serif;
+}
+
+.otsikko {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+
+.dot-border1 {
+    border: 2px dotted var(--primary-color2);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0.5rem;
+    margin-top: 0;
+}
+
+.dot-border2 {
+    border: 2px dotted var(--primary-color2);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0.5rem;
+    margin-top: 0;
+}
+
+.solid-border {
+    border: 2px solid var(--primary-color2);
+}
+
+.top-border {
+    border-top: 2px dotted var(--primary-color2);
+    padding-top: 1rem;
+}
+
+
+.gradienttiboxi {
+    background-image: radial-gradient(circle, var(--primary-color2), var(--primary-color));
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0.5rem;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.candycane-s {
+    width: 35px;
+    height: 100%;
+}
+
+.candycane-m {
+    display: none;
+}
+
+.candycane-l {
+    display: none;
+}
+
+body {
+    max-width: 1000px;
+    background-image: url("christmas-bg.png");
+    background-repeat: repeat;
+}
+
+#sailio {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color2);
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0.75rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.karamelli-teksti {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color2);
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#footer-teksti {
+    display: flex;
+    flex-direction: column;
+}
+
+#yhteystiedot {
+    display: flex;
+    column-gap: 1rem;
+}
+
+#linkit {
+    width: 100%;
+}
+
+#linkit>ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 0.3rem;
+    padding-left: 0;
+    margin: 0 0 0.5rem 0;
+}
+
+#linkit li {
+    list-style-type: none;
+    background-color: var(--secondary-color);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#somelinkit {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+#somelinkit>img {
+    width: 30px;
+}
+
+@media screen and (min-width: 600px) {
+    .dot-border1 {
+        border-width: 0;
+    }
+
+    .candycane-l {
+        display: flex;
+        justify-content: center;
+        column-gap: 3px;
+    }
+
+    .musta-border {
+        border: 2px solid black;
+        width: 179px;
+    }
+
+    #artikkelit {
+        display: flex;
+    }
+
+
+    #footer-teksti {
+        flex-direction: row;
+        column-gap: 0.5rem;
+    }
+
+    #somelinkit {
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .musta-border {
+        width: 212px;
+    }
+
+    #paneeli {
+        display: flex;
+    }
+
+    #paneeli>* {
+        flex-basis: 100%;
+    }
+
+    .bottom-margin {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .candycane-m {
+        display: block;
+        height: 60px;
+    }
+
+    .musta-border {
+        width: 246px;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    #artikkelit {
+        flex-basis: 0;
+        flex-grow: 9;
+    }
+
+    #paneeli {
+        flex-direction: column;
+        flex-basis: 0;
+        flex-grow: 4.5;
+        margin-top: 0.5rem;
+    }
+
+    #paneeli>* {
+        flex-basis: 0;
+    }
+
+    #ajankohtaista {
+        border-bottom-width: 0;
+    }
+
+    #meista-sanottua {
+        border-top-width: 0;
+    }
+
+    .dot-border2 {
+        margin: 0 0 0.5rem 0;
+    }
+
+    .bottom-margin {
+        margin: 0;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 0.5rem;
+    }
+
+    #footer-teksti {
+        width: 100%;
+    }
+
+    #somelinkit {
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+}

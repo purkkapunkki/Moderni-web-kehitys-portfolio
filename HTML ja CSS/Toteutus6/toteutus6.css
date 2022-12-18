@@ -1,0 +1,295 @@
+:root {
+    --primary-color: #fff7e6;
+    --secondary-color: #b999a1;
+    --ajankohtaista-fontti: #852425;
+    --footer-color: #000000;
+    --white-text: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.valkoteksti {
+    color: var(--white-text);
+    margin: 0;
+}
+
+.mustateksti {
+    color: var(--footer-color);
+}
+
+.nokka {
+    justify-content: space-between;
+}
+
+body {
+    max-width: 1000px;
+    font-family: serif;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#img1 {
+    display: none
+}
+
+#yla-linkit {
+    margin-bottom: 0.5rem;
+    background-color: var(--secondary-color);
+    border: solid var(--ajankohtaista-fontti) 2px;
+    color: var(--ajankohtaista-fontti);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+#navidrop {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: var(--secondary-color);
+    border: solid var(--footer-color) 1px;
+    margin: 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    right: 0;
+    cursor: default;
+}
+
+#navidrop a:hover {
+    color: var(--ajankohtaista-fontti);
+}
+
+#yla-linkit2 {
+    display: none;
+}
+
+#drop-nuoli:hover>#navidrop {
+    display: block;
+}
+
+#drop-nuoli:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#otsikko-tekstit {
+    display: none;
+}
+
+#ala-linkit {
+    background-color: var(--primary-color);
+    border: solid var(--secondary-color) 2px;
+    margin-top: 0.2rem;
+}
+
+#ala-linkit ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    margin: 0;
+}
+
+#ala-linkit li {
+    background-color: var(--secondary-color);
+    padding: 0.7rem;
+}
+
+#ala-linkit a {
+    display: flex;
+    column-gap: 8rem;
+}
+
+#artikkelit {
+    display: none;
+}
+
+footer {
+    background-color: var(--footer-color);
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+@media screen and (min-width: 600px) {
+
+    body {
+        border: solid var(--footer-color) 2px;
+    }
+
+    hr {
+        border-style: dashed;
+        width: 100%;
+    }
+
+    .piiloon {
+        display: none;
+    }
+
+    #yla-linkit {
+        display: none;
+    }
+
+    #yla-linkit2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #navidrop2 {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-basis: 0;
+        flex-grow: 2;
+    }
+
+    #navidrop2 li {
+        display: flex;
+        flex-direction: row;
+        border: solid var(--footer-color) 1px;
+        background-color: var(--secondary-color);
+        margin: 0;
+        padding: 0.6rem;
+        flex-basis: 0;
+        flex-grow: 2;
+        justify-content: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    #otsikko-tekstit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--primary-color);
+        border-top: solid var(--footer-color) 2px;
+        border-bottom: solid var(--footer-color) 2px;
+        padding: 1rem;
+    }
+
+    .opinahjo-teksti {
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+
+    }
+
+    #ala-linkit {
+        flex-basis: 0;
+        flex-grow: 1;
+        border-radius: 5px;
+        margin: 0.7rem;
+    }
+
+    #artikkelit {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        flex-basis: 0;
+        flex-grow: 3;
+        margin-right: 11.2px;
+    }
+
+    #tietotekniikka {
+        border-top: dashed var(--secondary-color) 2px;
+        border-bottom: dashed var(--secondary-color) 2px;
+        text-align: center;
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .ajokortti {
+        background-color: var(--primary-color);
+        border: solid var(--secondary-color) 2px;
+    }
+
+    .paikka {
+        width: 100%;
+    }
+
+    .sisalto {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .lisatietoja {
+        background-color: var(--secondary-color);
+        text-align: end;
+        padding-right: 0.5rem;
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #img1 {
+        display: flex;
+        width: 20%;
+    }
+
+    #yla-linkit2 {
+        column-gap: 9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #navidrop2 {
+        column-gap: 1rem;
+    }
+
+    #navidrop2 li {
+        align-items: center;
+    }
+
+    hr {
+        display: none;
+    }
+
+
+    #otsikko-tekstit {
+        flex-direction: row;
+    }
+
+    .opinahjo-teksti {
+        flex-basis: 0;
+        flex-grow: 2;
+    }
+
+    .lorem-teksti {
+        flex-basis: 0;
+        flex-grow: 2;
+    }
+}

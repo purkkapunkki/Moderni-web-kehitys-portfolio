@@ -1,0 +1,93 @@
+@midGreen: #33cc33;
+@lightGreen: desaturate(#a6ff4d, 30%);
+@darkGreen: #336600;
+@neutralColor: #808080;
+@white: #fff;
+@neutraali-teksti: @neutralColor;
+@vaaleavihrea-tausta: @lightGreen;
+@kirkasvihrea-tausta: @midGreen;
+@tummavihrea-teksti: @darkGreen;
+
+.neutriVari-teksti {
+    color: @neutraali-teksti;
+}
+
+.tummaVihrea-teksti {
+    color: @tummavihrea-teksti;
+}
+
+.tummaVihrea-border {
+    background-color: @white;
+    border: 2px solid @tummavihrea-teksti;
+    text-align: center;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.date,
+.tw-date,
+.fb-date {
+    color: @neutraali-teksti;
+}
+
+#top-navi {
+    .tummaVihrea-border;
+    background-color: @kirkasvihrea-tausta;
+
+    li {
+        &:hover {
+            background-color: @vaaleavihrea-tausta;
+        }
+    }
+
+    a {
+        color: @tummavihrea-teksti;
+    }
+}
+
+#site-header {
+    color: @tummavihrea-teksti;
+    text-shadow: 2px 2px @vaaleavihrea-tausta;
+    .tummaVihrea-border;
+}
+
+#sidebar {
+    h1 {
+        background-color: @kirkasvihrea-tausta;
+        color: @tummavihrea-teksti;
+    }
+
+    input {
+        background-color: @vaaleavihrea-tausta;
+    }
+
+    .event-date {
+        .tummaVihrea-border;
+
+        .month {
+            background-color: @tummavihrea-teksti;
+            color: @vaaleavihrea-tausta;
+            width: 100%;
+        }
+    }
+}
+
+#row2 {
+    background-color: @vaaleavihrea-tausta;
+
+    .project {
+        .tummaVihrea-border;
+    }
+}
+
+.tw-user,
+.fb-user {
+    color: @kirkasvihrea-tausta;
+}
+
+.fb-post {
+    border-bottom: dashed 3px gray;
+}
+
+#top-navi ul li .submenu li {
+    background-color: @midGreen;
+}
